@@ -1,5 +1,5 @@
 # install apps
-cinst googlechrome
+cinst firefox
 cinst vim-tux
 cinst arsclip
 cinst katmouse
