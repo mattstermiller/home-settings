@@ -19,6 +19,12 @@ Reactivate(prog) {
     WinActivate, %prog%
 }
 
+; load script corresponding to computer name if it exists
+ComputerScript = %A_ScriptDir%\%A_ComputerName%.ahk
+if FileExist(ComputerScript) {
+    Run "autohotkey.exe" %ComputerScript%
+}
+
 ; shortcuts
 #c::RunActivate("powershell")
 #^c::RunActivate("powershell", true)
@@ -35,9 +41,3 @@ Reactivate(prog) {
 +Media_Play_Pause::Send, {Media_Stop}
 ^Media_Play_Pause::Send, {Media_Stop}
 Break::AppsKey ; alternate context menu key
-
-; load script corresponding to computer name if it exists
-ComputerScript = %A_ScriptDir%\%A_ComputerName%.ahk
-if FileExist(ComputerScript) {
-    Run "autohotkey.exe" %ComputerScript%
-}
