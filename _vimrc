@@ -21,12 +21,7 @@ set guioptions-=m  " remove menu bar
 set guioptions-=T  " remove toolbar
 set laststatus=2 " airline always on
 syntax on
-if has("gui_running")
-  " GUI is running or is about to start.
-  set lines=999 columns=999
-else
-  set columns=120 lines=60
-endif
+set columns=128 lines=50
 
 " syntax filetype associations
 au BufNewFile,BufRead *.nuspec setlocal ft=xml
