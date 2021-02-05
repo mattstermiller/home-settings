@@ -6,6 +6,10 @@ set directory=$HOME/.vim/swap//
 
 let g:wordmotion_prefix = ','
 
+" wrap settings
+set textwidth=120
+set colorcolumn=+1
+
 " command aliases
 command! Sorc so $MYVIMRC
 command! Sorcvs so ~\_vsvimrc
