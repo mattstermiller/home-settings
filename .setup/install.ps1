@@ -1,6 +1,7 @@
 # install apps
 cinst firefox
 cinst vim-tux
+cinst microsoft-windows-terminal
 cinst arsclip
 cinst katmouse
 cinst autohotkey
