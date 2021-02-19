@@ -22,10 +22,9 @@ if FileExist(ComputerScript) {
 }
 
 ; shortcuts
-#c::RunActivate("powershell")
-#^c::RunActivate("powershell", true)
+#c::RunActivate("wt")
+#^c::RunActivate("wt", true)
 #v::RunActivate("C:\Program Files\Vim\vim82\gvim.exe")
-#b::RunActivate("C:\Program Files\Git\git-bash.exe")
 #k::RunActivate("C:\Program Files (x86)\Koffee\koffee.exe")
 #^k::RunActivate("C:\Program Files (x86)\Koffee\koffee.exe", true)
 #!k::WinActivate, ahk_exe Koffee.exe
