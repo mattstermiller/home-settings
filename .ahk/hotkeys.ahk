@@ -1,4 +1,4 @@
-﻿#NoEnv
+#NoEnv
 #Warn
 SendMode Input
 
@@ -14,10 +14,6 @@ RunActivate(command, asAdmin := false) {
     WinWait, ahk_pid %OutputPID%
     WinActivate, ahk_pid %OutputPID%
 }
-Reactivate(prog) {
-    SetTitleMatchMode, 2
-    WinActivate, %prog%
-}
 
 ; load script corresponding to computer name if it exists
 ComputerScript = %A_ScriptDir%\%A_ComputerName%.ahk
@@ -32,7 +28,7 @@ if FileExist(ComputerScript) {
 #b::RunActivate("C:\Program Files\Git\git-bash.exe")
 #k::RunActivate("C:\Program Files (x86)\Koffee\koffee.exe")
 #^k::RunActivate("C:\Program Files (x86)\Koffee\koffee.exe", true)
-#!k::Reactivate("Koffee v")
+#!k::WinActivate, ahk_exe Koffee.exe
 #[::Run, "nircmd.exe" setdefaultsounddevice "Headset" 1
 #]::Run, "nircmd.exe" setdefaultsounddevice "Headphones" 1
 #\::Run, "nircmd.exe" setdefaultsounddevice "Speakers" 1
