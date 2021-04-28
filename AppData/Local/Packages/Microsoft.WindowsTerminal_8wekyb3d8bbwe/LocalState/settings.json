@@ -29,7 +29,7 @@
         {
             "startingDirectory": ".",
             "useAcrylic": true,
-            "acrylicOpacity": 0.6
+            "acrylicOpacity": 0.7
         },
         "list":
         [
@@ -66,7 +66,7 @@
     "schemes": [
         {
             "name": "cyberpunk",
-            "black": "#000000",
+            "black": "#555",
             "red": "#ff7092",
             "green": "#00fbac",
             "yellow": "#fffa6a",
@@ -74,7 +74,7 @@
             "purple": "#df95ff",
             "cyan": "#86cbfe",
             "white": "#ffffff",
-            "brightBlack": "#000000",
+            "brightBlack": "#444",
             "brightRed": "#ff8aa4",
             "brightGreen": "#21f6bc",
             "brightYellow": "#fff787",
