@@ -32,6 +32,17 @@ mkdir ..\.vim\swap
 
 code --install-extension Shan.code-settings-sync
 
+# add pins for apps that aggressively auto-update
+choco pin add -n=firefox
+choco pin add -n=foxitreader
+choco pin add -n=gitkraken
+choco pin add -n=googlechrome
+choco pin add -n=kb2533623
+choco pin add -n=steam
+choco pin add -n=vcredist140
+choco pin add -n=vscode
+choco pin add -n=vscode.install
+
 # generate shims
 & "$env:ChocolateyInstall\tools\shimgen.exe" -p "$env:ChocolateyInstall\tools\shimgen.exe" -o "$env:ChocolateyInstall\bin\shimgen.exe"
 shimgen -p "C:\Program Files\Git\git-bash.exe" -o "$env:ChocolateyInstall\bin\git-bash.exe"
