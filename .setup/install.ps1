@@ -3,24 +3,28 @@ cinst firefox
 cinst vim-tux
 cinst microsoft-windows-terminal
 cinst arsclip
-cinst katmouse
+#cinst katmouse
 cinst autohotkey
 cinst nircmd
 cinst vlc
 cinst irfanview
 cinst 7zip
-cinst slack
+#cinst microsoft-teams
+#cinst slack
 #cinst gimp
 #cinst screentogif
 #cinst logitechgaming
 
 # install dev tools
-cinst gitkraken
+#cinst gitkraken
 cinst vscode
-cinst linqpad5
+#cinst jetbrains-rider
+#cinst linqpad5
 cinst dotnetcore-sdk
-cinst fake
+#cinst fake
 #cinst visualstudio2019-workload-manageddesktopbuildtools
+#cinst azure-cli
+#cinst nodejs
 #cinst yarn
 #cinst smtp4dev
 #cinst postman
@@ -41,7 +45,7 @@ choco pin add -n=kb2533623
 choco pin add -n=steam
 choco pin add -n=vcredist140
 choco pin add -n=vscode
-choco pin add -n=vscode.install
+choco pin add -n="vscode.install"
 
 # generate shims
 & "$env:ChocolateyInstall\tools\shimgen.exe" -p "$env:ChocolateyInstall\tools\shimgen.exe" -o "$env:ChocolateyInstall\bin\shimgen.exe"
