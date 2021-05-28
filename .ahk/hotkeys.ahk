@@ -44,6 +44,6 @@ if FileExist(ComputerScript) {
 #\::Run, "nircmd.exe" setdefaultsounddevice "Speakers" 1
 
 ; keyboard alternate keys
-+Media_Play_Pause::Send, {Media_Stop}
+!Media_Play_Pause::Send, {Media_Stop}
 ^Media_Play_Pause::Send, {Media_Stop}
 Break::AppsKey ; alternate context menu key
