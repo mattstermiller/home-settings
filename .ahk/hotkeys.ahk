@@ -1,4 +1,4 @@
-﻿#NoEnv
+#NoEnv
 #Warn
 SendMode Input
 
@@ -47,3 +47,10 @@ if FileExist(ComputerScript) {
 !Media_Play_Pause::Send, {Media_Stop}
 ^Media_Play_Pause::Send, {Media_Stop}
 Break::AppsKey ; alternate context menu key
+
+RelaunchLogitech() {
+    Process, Close, LCore.exe
+    RunApp("C:\Program Files\Logitech Gaming Software\LCore.exe")
+}
+XButton1::RelaunchLogitech()
+
