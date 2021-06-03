@@ -19,7 +19,7 @@ RunApp(command, asAdmin := false, activateProg := "") {
         WinActivate, ahk_pid %OutputPID%
     }
 }
-RunOrActivate(prog, command, asAdmin := false) {
+RunOrActivate(command, prog, asAdmin := false) {
     if WinExist("ahk_exe " . prog)
         WinActivate
     else
@@ -33,8 +33,8 @@ if FileExist(ComputerScript) {
 }
 
 ; shortcuts
-#c::RunOrActivate("WindowsTerminal.exe", "wt")
-#^c::RunOrActivate("WindowsTerminal.exe", "wt", true)
+#c::RunOrActivate("wt.exe", "WindowsTerminal.exe")
+#^c::RunApp("wt.exe", true, "WindowsTerminal.exe")
 #v::RunApp("C:\Program Files\Vim\vim82\gvim.exe")
 #k::RunApp("C:\Program Files (x86)\Koffee\koffee.exe")
 #^k::RunApp("C:\Program Files (x86)\Koffee\koffee.exe", true)
