@@ -38,7 +38,7 @@ vnoremap <c-x> "+d
 vnoremap <c-c> "+y
 nnoremap <c-v> "+p
 vnoremap <c-v> "+p
-inoremap <c-v> <esc>"+pa
+inoremap <c-v> x<esc>x"+pa
 nnoremap <c-w> :q<cr>
 inoremap <c-w> <esc>:q<cr>
 vnoremap <c-w> <esc>:q<cr>
