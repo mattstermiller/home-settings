@@ -29,6 +29,12 @@ vnoremap <c-j> <c-d>
 nnoremap <c-k> <c-u>
 vnoremap <c-k> <c-u>
 
+" switching between panes
+nnoremap <leader>wh <c-w>h
+nnoremap <leader>wj <c-w>j
+nnoremap <leader>wk <c-w>k
+nnoremap <leader>wl <c-w>l
+
 " control-keys for select all, undo, save, cut, copy, paste, quit
 nnoremap <c-a> ggVG
 nnoremap <c-s> :w<cr>
