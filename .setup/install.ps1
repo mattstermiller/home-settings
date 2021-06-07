@@ -16,7 +16,8 @@ cinst 7zip
 #cinst logitechgaming
 
 # install dev tools
-#cinst gitkraken
+cinst gitkraken
+cinst p4merge
 cinst vscode
 #cinst jetbrains-rider
 #cinst linqpad5
