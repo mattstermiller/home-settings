@@ -17,11 +17,19 @@ set textwidth=120
 set colorcolumn=+1
 
 " appearance
-colorscheme slate
 set nu " line numbers
 set scrolloff=8
 set laststatus=2 " airline always on
+colorscheme slate
 syntax on
+" nice diff colors
+if &diff
+    set t_Co=256
+    highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17
+    highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17
+    highlight DiffChange cterm=bold ctermfg=10 ctermbg=17
+    highlight DiffText   cterm=bold ctermfg=10 ctermbg=136
+endif
 " fix cursor in windows terminal
 if &term == 'win32'
     let &t_ti.=" \e[1 q"
