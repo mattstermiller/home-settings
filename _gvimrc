@@ -1,0 +1,6 @@
+so ~/_vimrc
+
+set guifont=Consolas:h12
+set guioptions-=m  " remove menu bar
+set guioptions-=T  " remove toolbar
+set columns=128 lines=50
