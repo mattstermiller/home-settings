@@ -9,6 +9,8 @@
 	longpaths = true
 [alias]
 	sweep = !git branch --merged | egrep -v \"(^\\*|^\\s*(master|develop|test)$)\" | xargs git branch -d
+	dt = difftool
+	mt = mergetool
 [pull]
 	rebase = true
 [push]
@@ -16,19 +18,19 @@
 [remote "origin"]
 	prune = true
 [diff]
-	tool = tortoise
+	tool = p4merge
 [difftool]
 	prompt = false
+[difftool "p4merge"]
+	path = C:\\Program Files\\Perforce\\p4merge.exe
 [merge]
-	tool = tortoise
+	tool = p4merge
+    conflictStyle = diff3
 [mergetool]
 	prompt = false
 	keepBackup = false
-[difftool "tortoise"]
-	cmd = 'C:/Program Files/TortoiseSVN/bin/TortoiseMerge.exe' \"$LOCAL\" \"$REMOTE\"
-[mergetool "tortoise"]
-	cmd = 'C:/Program Files/TortoiseSVN/bin/TortoiseMerge.exe'  -base:\"$BASE\" -mine:\"$LOCAL\" -theirs:\"$REMOTE\" -merged:\"$MERGED\"
-	trustExitCode = true
+[mergetool "p4merge"]
+	path = C:\\Program Files\\Perforce\\p4merge.exe
 [gpg]
 	program = gpg
 [commit]
