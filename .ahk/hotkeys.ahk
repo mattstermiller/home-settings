@@ -1,4 +1,4 @@
-#NoEnv
+﻿#NoEnv
 #Warn
 SendMode Input
 
@@ -46,7 +46,6 @@ if FileExist(ComputerScript) {
 ; keyboard alternate keys
 !Media_Play_Pause::Send, {Media_Stop}
 ^Media_Play_Pause::Send, {Media_Stop}
-Break::AppsKey ; alternate context menu key
 
 RelaunchLogitech() {
     Process, Close, LCore.exe
