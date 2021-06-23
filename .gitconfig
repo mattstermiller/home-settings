@@ -4,7 +4,7 @@
 	signingKey = ""
 [core]
 	autocrlf = true
-	excludesfile =
+	excludesfile = ~/.gitignore_global
 	mergeoptions = --no-edit
 	longpaths = true
 [alias]
