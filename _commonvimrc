@@ -76,6 +76,7 @@ set autoindent
 set ignorecase
 set smartcase
 set hlsearch
+set incsearch
 " clear search highlight with Backspace
 nnoremap <silent> <bs> :noh<cr><bs>
 
