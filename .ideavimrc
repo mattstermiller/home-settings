@@ -1,0 +1,16 @@
+source ~/_commonvimrc
+
+" search for an action name in IDEA by typing :actionlist <term>
+nmap gi <Action>(GotoImplementation)
+nmap gq <Action>(ReformatCode)
+vmap gq <Action>(ReformatCode)
+nmap <leader>ws <Action>(MoveTabRight)
+nmap <leader>wh <Action>(PrevSplitter)
+nmap <leader>wl <Action>(NextSplitter)
+nmap <leader>wH <Action>(MoveEditorToOppositeTabGroup)
+nmap <leader>wL <Action>(MoveEditorToOppositeTabGroup)
+nmap <leader>h <Action>(Back)
+nmap <leader>l <Action>(Forward)
+nmap <leader>q <Action>(QuickJavaDoc)
+nmap <leader>e <Action>(ReSharperGotoNextErrorInSolution)
+nmap <leader>u <Action>(FindUsages)

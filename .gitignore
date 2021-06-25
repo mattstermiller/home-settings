@@ -9,7 +9,7 @@
 !/.gitignore
 !/.gitignore_global
 !/.gitconfig
-!/_*vimrc
+!/*vimrc
 !/_vundle
 
 !/AppData
