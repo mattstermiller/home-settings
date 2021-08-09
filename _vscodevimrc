@@ -1,0 +1,11 @@
+source $HOME/_commonvimrc
+
+nmap <leader>h workbench.action.navigateBack
+nmap <leader>l workbench.action.navigateForward
+nmap <leader>q editor.action.showHover
+nmap <leader>u editor.action.goToReferences
+nmap <leader>ws workbench.action.splitEditor
+nmap <leader>wh workbench.action.focusPreviousGroup
+nmap <leader>wl workbench.action.focusNextGroup
+nmap <leader>wH workbench.action.moveEditorToPreviousGroup
+nmap <leader>wL workbench.action.moveEditorToNextGroup
