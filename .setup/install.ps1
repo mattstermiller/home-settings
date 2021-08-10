@@ -37,6 +37,9 @@ mkdir ..\.vim\swap
 
 code --install-extension Shan.code-settings-sync
 
+# copy nuget.config since SDK does not create it
+copy .\NuGet.Config ..\AppData\Roaming\NuGet\
+
 # add pins for apps that aggressively auto-update
 choco pin add -n=firefox
 choco pin add -n=foxitreader
