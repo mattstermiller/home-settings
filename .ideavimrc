@@ -1,5 +1,7 @@
 source ~/_commonvimrc
 
+set surround
+
 " search for an action name in IDEA by typing :actionlist <term>
 nmap gi <Action>(GotoImplementation)
 nmap gq <Action>(ReformatCode)
