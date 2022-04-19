@@ -1,6 +1,6 @@
 # install apps
 cinst firefox
-cinst vim-tux
+cinst vim
 cinst microsoft-windows-terminal
 cinst arsclip
 #cinst katmouse
@@ -21,7 +21,7 @@ cinst p4merge
 cinst vscode
 #cinst jetbrains-rider
 #cinst linqpad5
-cinst dotnetcore-sdk
+cinst dotnet-sdk
 #cinst fake
 #cinst visualstudio2019-workload-manageddesktopbuildtools
 #cinst azure-cli
