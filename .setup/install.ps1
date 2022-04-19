@@ -1,34 +1,34 @@
 # install apps
-cinst firefox
-cinst vim
-cinst microsoft-windows-terminal
-cinst arsclip
-#cinst katmouse
-cinst autohotkey
-cinst nircmd
-cinst vlc
-cinst irfanview
-cinst 7zip
-#cinst microsoft-teams
-#cinst slack
-#cinst gimp
-#cinst screentogif
-#cinst logitechgaming
+choco install firefox
+choco install vim
+choco install microsoft-windows-terminal
+choco install arsclip
+#choco install katmouse
+choco install autohotkey
+choco install nircmd
+choco install vlc
+choco install irfanview
+choco install 7zip
+#choco install microsoft-teams
+#choco install slack
+#choco install gimp
+#choco install screentogif
+#choco install logitechgaming
 
 # install dev tools
-cinst gitkraken
-cinst p4merge
-cinst vscode
-#cinst jetbrains-rider
-#cinst linqpad5
-cinst dotnet-sdk
-#cinst fake
-#cinst visualstudio2019-workload-manageddesktopbuildtools
-#cinst azure-cli
-#cinst nodejs
-#cinst yarn
-#cinst smtp4dev
-#cinst postman
+choco install gitkraken
+choco install p4merge
+choco install vscode
+#choco install jetbrains-rider
+#choco install linqpad5
+choco install dotnet-sdk
+#choco install fake
+#choco install visualstudio2019-workload-manageddesktopbuildtools
+#choco install azure-cli
+#choco install nodejs
+#choco install yarn
+#choco install smtp4dev
+#choco install postman
 
 # install plugins for apps
 git clone https://github.com/VundleVim/Vundle.vim.git ../.vim/bundle/Vundle.vim
