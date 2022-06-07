@@ -6,8 +6,9 @@ nmap <leader>q editor.action.showHover
 nmap <leader>u editor.action.goToReferences
 nmap <leader>e editor.action.marker.nextInFiles
 nmap <leader>E editor.action.marker.prevInFiles
-nmap <leader>ws workbench.action.splitEditor
 nmap <leader>wh workbench.action.focusPreviousGroup
 nmap <leader>wl workbench.action.focusNextGroup
 nmap <leader>wH workbench.action.moveEditorToPreviousGroup
 nmap <leader>wL workbench.action.moveEditorToNextGroup
+nmap <leader>ws workbench.action.moveEditorToNextGroup
+nmap <leader>wd workbench.action.splitEditor
