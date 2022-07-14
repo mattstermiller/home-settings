@@ -18,7 +18,7 @@ set colorcolumn=+1
 
 " appearance
 set nu " line numbers
-set scrolloff=8
+set scrolloff=4
 set laststatus=2 " airline always on
 colorscheme slate
 syntax on
