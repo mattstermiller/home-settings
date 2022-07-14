@@ -24,6 +24,12 @@ onoremap H ^
 nnoremap L $
 vnoremap L $
 onoremap L $
+nnoremap gH g^
+vnoremap gH g^
+onoremap gH g^
+nnoremap gL g$
+vnoremap gL g$
+onoremap gL g$
 nnoremap <c-j> <c-d>
 vnoremap <c-j> <c-d>
 nnoremap <c-k> <c-u>
