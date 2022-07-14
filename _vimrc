@@ -12,10 +12,6 @@ command! Fixdi %s/\(DI.FM\) - \(.*\)/\2 - \1 Premium/g
 
 let g:wordmotion_prefix = ','
 
-" wrap settings
-set textwidth=120
-set colorcolumn=+1
-
 " appearance
 set nu " line numbers
 set scrolloff=4
