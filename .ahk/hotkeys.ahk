@@ -1,4 +1,4 @@
-#NoEnv
+﻿#NoEnv
 #Warn
 SendMode Input
 
@@ -52,4 +52,5 @@ RelaunchLogitech() {
     RunApp("C:\Program Files\Logitech Gaming Software\LCore.exe")
 }
 XButton1::RelaunchLogitech()
+!^+L::RelaunchLogitech()
 
