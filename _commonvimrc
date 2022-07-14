@@ -58,10 +58,6 @@ nnoremap <silent> <leader>S viw"+p
 " trim trailing spaces in file
 nnoremap <silent> <leader>t :%s/[ \t]\+$/<cr>
 
-" auto-close F# quotations and attributes
-inoremap <@ <@ @><Left><Left><Left>
-inoremap [< [<lt>>]<Left><Left>
-
 
 " enable backspace
 set backspace=indent,eol,start
