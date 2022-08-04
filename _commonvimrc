@@ -1,3 +1,6 @@
+" leader key
+let mapleader=" "
+
 inoremap kj <esc>
 nnoremap U <c-r>
 nnoremap Y y$
@@ -55,8 +58,8 @@ nnoremap <c-w> :q<cr>
 inoremap <c-w> <esc>:q<cr>
 vnoremap <c-w> <esc>:q<cr>
 
-" leader key
-let mapleader=" "
+" delete into black hole register
+nnoremap <silent> <leader>d "_d
 " swap word under cursor with yank register
 nnoremap <silent> <leader>s viwp
 " swap word under cursor with system clipboard
