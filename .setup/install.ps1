@@ -31,9 +31,10 @@ choco install dotnet-sdk
 #choco install postman
 
 # install plugins for apps
-git clone https://github.com/VundleVim/Vundle.vim.git ../.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
-mkdir ..\.vim\swap
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni $HOME/vimfiles/autoload/plug.vim -Force
+vim +PlugInstall
+mkdir ..\vimfiles\swap
 
 code --install-extension Shan.code-settings-sync
 

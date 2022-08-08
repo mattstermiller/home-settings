@@ -10,7 +10,6 @@
 !/.gitignore_global
 !/.gitconfig
 !/*vimrc
-!/_vundle
 
 !/AppData
 /AppData/*

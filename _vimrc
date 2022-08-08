@@ -1,8 +1,23 @@
-so ~/_vundle
 so ~/_commonvimrc
 
+" vim-plug plugins
+call plug#begin()
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-surround'
+Plug 'chaoren/vim-wordmotion'
+call plug#end()
+
+" vim-plug commands
+"   PlugInstall [name ...]  Install plugins
+"   PlugUpdate [name ...]   Install or update plugins
+"   PlugClean[!]            Remove unlisted plugins (bang version will clean without prompt)
+"   PlugUpgrade             Upgrade vim-plug itself
+"   PlugStatus              Check the status of plugins
+"   PlugDiff                Examine changes from the previous update and the pending changes
+"   PlugSnapshot[!] [path]  Generate script for restoring the current snapshot of the plugins
+
 " write swap files here instead of beside each file
-set directory=$HOME/.vim/swap//
+set directory=$HOME/vimfiles/swap//
 
 " command aliases
 command! Sorc so $MYVIMRC
