@@ -14,6 +14,7 @@ choco install 7zip
 #choco install gimp
 #choco install screentogif
 #choco install logitechgaming
+#choco install steam
 
 # install dev tools
 choco install gitkraken
@@ -25,7 +26,8 @@ choco install dotnet-sdk
 #choco install fake
 #choco install visualstudio2019-workload-manageddesktopbuildtools
 #choco install azure-cli
-#choco install nodejs
+#choco install k9s
+#choco install nodejs-lts
 #choco install yarn
 #choco install smtp4dev
 #choco install postman
@@ -35,8 +37,6 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni $HOME/vimfiles/autoload/plug.vim -Force
 vim +PlugInstall
 mkdir ..\vimfiles\swap
-
-code --install-extension Shan.code-settings-sync
 
 # copy nuget.config since SDK does not create it
 copy .\NuGet.Config ..\AppData\Roaming\NuGet\
