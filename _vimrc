@@ -31,6 +31,7 @@ let g:wordmotion_prefix = ','
 set nu " line numbers
 set scrolloff=4
 set laststatus=2 " airline always on
+set display+=lastline " don't hide partially-visible wrapped lines
 colorscheme slate
 syntax on
 " nice diff colors
