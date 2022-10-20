@@ -39,9 +39,8 @@ if FileExist(ComputerScript) {
 #k::RunApp("C:\Program Files (x86)\Koffee\koffee.exe")
 #^k::RunApp("C:\Program Files (x86)\Koffee\koffee.exe", true)
 #!k::WinActivate, ahk_exe Koffee.exe
-#[::Run, "nircmd.exe" setdefaultsounddevice "Headset" 1
-#]::Run, "nircmd.exe" setdefaultsounddevice "Headphones" 1
-#\::Run, "nircmd.exe" setdefaultsounddevice "Speakers" 1
+#q::Run, "nircmd.exe" setdefaultsounddevice "Headphones" 1
+#w::Run, "nircmd.exe" setdefaultsounddevice "Speakers" 1
 
 ; keyboard alternate keys
 !Media_Play_Pause::Send, {Media_Stop}
