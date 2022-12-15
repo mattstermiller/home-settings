@@ -62,4 +62,4 @@ nircmd shortcut "$env:userprofile\.ahk\hotkeys.ahk" '~$folder.startup$' "Hotkeys
 $startMenu = "$env:userprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
 copy "$startMenu\ArsClip.lnk" "$startMenu\Startup"
 
-REGEDIT /S CapsToControl-ScrollToCaps.reg
+REGEDIT /S KillCapsLock-ScrollLockToCapsLock.reg
