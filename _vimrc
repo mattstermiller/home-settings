@@ -78,7 +78,7 @@ endfunction
 nnoremap <F10> :call ToggleTab()<cr>
 
 " show/hide whitespace chars
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,space:.
 function ToggleWhiteSpace()
     if &list
         set nolist
