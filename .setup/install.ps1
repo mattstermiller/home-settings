@@ -12,6 +12,7 @@ choco install 7zip
 #choco install microsoft-teams
 #choco install slack
 #choco install gimp
+choco install lightshot
 #choco install screentogif
 #choco install logitechgaming
 #choco install steam
