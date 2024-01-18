@@ -8,7 +8,8 @@
 	mergeoptions = --no-edit
 	longpaths = true
 [alias]
-	sweep = !git branch --merged | egrep -v \"(^\\*|^\\s*(master|develop|test)$)\" | xargs git branch -d
+	cleanall = !git clean -fdx
+	delmerged = !git branch --merged | egrep -v \"(^\\*|^\\s*(master|develop|test)$)\" | xargs git branch -d
 	dt = difftool
 	mt = mergetool
 [pull]
