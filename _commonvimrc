@@ -33,6 +33,12 @@ onoremap gH g^
 nnoremap gL g$
 vnoremap gL g$
 onoremap gL g$
+nnoremap <a-j> gj
+vnoremap <a-j> gj
+onoremap <a-j> gj
+nnoremap <a-k> gk
+vnoremap <a-k> gk
+onoremap <a-k> gk
 nnoremap <c-j> <c-d>
 vnoremap <c-j> <c-d>
 nnoremap <c-k> <c-u>
