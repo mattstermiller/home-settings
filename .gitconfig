@@ -23,7 +23,7 @@
 [difftool]
 	prompt = false
 [difftool "vscode"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+    cmd = code --wait --diff $REMOTE $LOCAL
 
 [merge]
     tool = vscode
