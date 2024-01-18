@@ -1,5 +1,6 @@
 source ~/_commonvimrc
 
+set ideajoin
 set surround
 
 " search for an action name in IDEA by typing :actionlist <term>
@@ -11,6 +12,7 @@ nmap <leader>l <Action>(Forward)
 nmap <leader>q <Action>(QuickJavaDoc)
 nmap <leader>1 <Action>(ShowErrorDescription)
 nmap <leader>e <Action>(ReSharperGotoNextErrorInSolution)
+nmap <leader>E <Action>(GotoNextError)
 nmap <leader>u <Action>(FindUsages)
 nmap <leader>wh <Action>(PrevSplitter)
 nmap <leader>wl <Action>(NextSplitter)
