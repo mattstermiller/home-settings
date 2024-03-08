@@ -1,4 +1,4 @@
-﻿#NoEnv
+#NoEnv
 #Warn
 SendMode Input
 
@@ -35,7 +35,7 @@ if FileExist(ComputerScript) {
 ; shortcuts
 #c::RunOrActivate("wt.exe", "WindowsTerminal.exe")
 #^c::RunApp("wt.exe", true, "WindowsTerminal.exe")
-#v::RunApp("gvim")
+#v::RunApp("C:\tools\vim\vim91\gvim.exe")
 #k::RunApp("C:\Program Files (x86)\Koffee\koffee.exe")
 #^k::RunApp("C:\Program Files (x86)\Koffee\koffee.exe", true)
 #!k::WinActivate, ahk_exe Koffee.exe
