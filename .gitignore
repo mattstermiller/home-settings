@@ -3,7 +3,6 @@
 # ...except these folders and files:
 !/.ahk/
 !/.setup/
-!/.p4merge/
 
 !/.bashrc
 !/.gitignore
