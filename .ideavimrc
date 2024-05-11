@@ -4,6 +4,7 @@ set ideajoin
 set surround
 
 " search for an action name in IDEA by typing :actionlist <term>
+
 nmap gi <Action>(GotoImplementation)
 nmap gq <Action>(ReformatCode)
 vmap gq <Action>(ReformatCode)
@@ -11,8 +12,12 @@ nmap <leader>h <Action>(Back)
 nmap <leader>l <Action>(Forward)
 nmap <leader>q <Action>(QuickJavaDoc)
 nmap <leader>1 <Action>(ShowErrorDescription)
-nmap <leader>e <Action>(ReSharperGotoNextErrorInSolution)
-nmap <leader>E <Action>(GotoNextError)
+if &ide =~? 'rider'
+    nmap <leader>e <Action>(ReSharperGotoNextErrorInSolution)
+else
+    nmap <leader>e <Action>(GotoNextError)
+    nmap <leader>E <Action>(ActivateProblemsViewToolWindow)
+endif
 nmap <leader>u <Action>(FindUsages)
 nmap <leader>wh <Action>(PrevSplitter)
 nmap <leader>wl <Action>(NextSplitter)
