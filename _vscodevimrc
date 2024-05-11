@@ -1,3 +1,6 @@
+" fix paste in insert mode since the plugin doesn't support <c-r><c-o>
+inoremap <c-v> <esc>"+pa
+
 source $HOME/_commonvimrc
 
 nmap <leader>h workbench.action.navigateBack
