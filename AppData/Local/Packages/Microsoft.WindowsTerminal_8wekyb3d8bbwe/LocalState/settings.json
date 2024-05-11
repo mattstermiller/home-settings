@@ -48,6 +48,12 @@
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "initialCols": 120,
     "initialRows": 40,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
@@ -333,5 +339,6 @@
             "yellow": "#FFFA6A"
         }
     ],
-    "themes": []
+    "themes": [],
+    "windowingBehavior": "useExisting"
 }
