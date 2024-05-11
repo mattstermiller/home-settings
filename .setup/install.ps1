@@ -19,7 +19,6 @@ choco install lightshot
 
 # install dev tools
 choco install gitkraken
-choco install p4merge
 choco install vscode
 #choco install jetbrains-rider
 #choco install linqpad5
