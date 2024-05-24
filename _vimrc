@@ -4,6 +4,7 @@ so ~/_commonvimrc
 call plug#begin()
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-surround'
+Plug 'bronson/vim-visual-star-search'
 Plug 'chaoren/vim-wordmotion'
 call plug#end()
 
