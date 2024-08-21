@@ -5,6 +5,7 @@ source $HOME/_commonvimrc
 
 nmap <leader>h workbench.action.navigateBack
 nmap <leader>l workbench.action.navigateForward
+nmap <leader>k editor.toggleFold
 nmap <leader>q editor.action.showHover
 nmap <leader>u editor.action.goToReferences
 nmap <leader>e editor.action.marker.nextInFiles

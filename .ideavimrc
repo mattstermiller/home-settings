@@ -10,6 +10,7 @@ nmap gq <Action>(ReformatCode)
 vmap gq <Action>(ReformatCode)
 nmap <leader>h <Action>(Back)
 nmap <leader>l <Action>(Forward)
+nmap <leader>k <Action>(ExpandCollapseToggleAction)
 nmap <leader>q <Action>(QuickJavaDoc)
 nmap <leader>1 <Action>(ShowErrorDescription)
 if &ide =~? 'rider'
