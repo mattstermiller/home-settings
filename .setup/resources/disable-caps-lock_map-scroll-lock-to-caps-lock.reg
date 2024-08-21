@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+; Remaps Caps Lock to nothing and Scroll Lock to Caps Lock
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,03,00,00,00,00,00,3a,00,3a,00,46,00,00,00,00,00
+
