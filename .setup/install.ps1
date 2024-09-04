@@ -41,9 +41,8 @@ copy .\resources\NuGet.Config ..\AppData\Roaming\NuGet\
 
 # add pins for apps that auto-update
 choco pin add -n=firefox
-choco pin add -n=foxitreader
+choco pin add -n="microsoft-windows-terminal"
 choco pin add -n=gitkraken
-choco pin add -n=googlechrome
 choco pin add -n=kb2533623
 choco pin add -n=steam
 choco pin add -n=vcredist140
