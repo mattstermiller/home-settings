@@ -8,27 +8,17 @@ choco install nircmd
 choco install vlc
 choco install irfanview
 choco install 7zip
-#choco install slack
-#choco install gimp
 choco install lightshot
+#choco install gimp
 #choco install screentogif
-#choco install logitechgaming
+#choco install logitech-options-plus
 #choco install steam
 
 # install dev tools
 choco install gitkraken
 choco install vscode
-#choco install jetbrains-rider
-#choco install linqpad5
 choco install dotnet-sdk
-#choco install fake
-#choco install visualstudio2019-workload-manageddesktopbuildtools
-#choco install azure-cli
-#choco install k9s
-#choco install nodejs-lts
-#choco install yarn
-#choco install smtp4dev
-#choco install postman
+choco install visualstudio2019-workload-manageddesktopbuildtools
 
 # vim setup
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
