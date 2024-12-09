@@ -42,14 +42,7 @@ if FileExist(ComputerScript) {
 #q::Run, "nircmd.exe" setdefaultsounddevice "Headphones" 1
 #w::Run, "nircmd.exe" setdefaultsounddevice "Speakers" 1
 
-; keyboard alternate keys
+; alternate media keys
 !Media_Play_Pause::Send, {Media_Stop}
 ^Media_Play_Pause::Send, {Media_Stop}
-
-RelaunchLogitech() {
-    Process, Close, LCore.exe
-    RunApp("C:\Program Files\Logitech Gaming Software\LCore.exe")
-}
-XButton1::RelaunchLogitech()
-!^+L::RelaunchLogitech()
 
