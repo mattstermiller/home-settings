@@ -9,16 +9,23 @@ choco install vlc
 choco install irfanview
 choco install 7zip
 choco install lightshot
-#choco install gimp
-#choco install screentogif
-#choco install logitech-options-plus
-#choco install steam
+choco install slack
+choco install screentogif
+choco install logitech-options-plus
 
 # install dev tools
 choco install gitkraken
 choco install vscode
 choco install dotnet-sdk
+choco install jetbrains-rider
 choco install visualstudio2019-workload-manageddesktopbuildtools
+choco install azure-cli
+choco install k9s
+choco install protoc
+choco install nodejs-lts
+choco install yarn
+choco install postman
+choco install docker-desktop
 
 # vim setup
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
@@ -31,10 +38,12 @@ copy .\resources\NuGet.Config ..\AppData\Roaming\NuGet\
 
 # add pins for apps that auto-update
 choco pin add -n=firefox
-choco pin add -n="microsoft-windows-terminal"
 choco pin add -n=gitkraken
+choco pin add -n=jetbrains-rider
 choco pin add -n=kb2533623
-choco pin add -n=steam
+choco pin add -n="microsoft-windows-terminal"
+choco pin add -n=postman
+choco pin add -n=slack
 choco pin add -n=vcredist140
 choco pin add -n=vscode
 choco pin add -n="vscode.install"
