@@ -4,6 +4,7 @@
 	signingKey = ""
 [core]
 	autocrlf = true
+    editor = vim
 	excludesfile = ~/.gitignore_global
 	mergeoptions = --no-edit
 	longpaths = true
