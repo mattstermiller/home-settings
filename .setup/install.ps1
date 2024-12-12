@@ -23,10 +23,11 @@ choco install visualstudio2019-workload-manageddesktopbuildtools
 # vim setup
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni $HOME/vimfiles/autoload/plug.vim -Force
-vim +PlugInstall
+vim +PlugInstall +qall
 mkdir ..\vimfiles\swap
 
 # copy nuget.config since SDK does not create it
+mkdir ..\AppData\Roaming\NuGet\
 copy .\resources\NuGet.Config ..\AppData\Roaming\NuGet\
 
 # add pins for apps that auto-update
