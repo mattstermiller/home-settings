@@ -18,10 +18,16 @@ choco install gitkraken
 choco install vscode
 choco install dotnet-sdk
 choco install jetbrains-rider
+choco install intellijidea-ultimate
 choco install visualstudio2019-workload-manageddesktopbuildtools
 choco install azure-cli
+choco install azure-kubelogin
 choco install k9s
 choco install protoc
+choco install mongodb
+choco install mongodb-shell
+choco install mongodb-compass
+choco install datagrip
 choco install nodejs-lts
 choco install yarn
 choco install postman
