@@ -11,8 +11,9 @@ choco install 7zip
 choco install lightshot
 #choco install gimp
 #choco install screentogif
-#choco install logitech-options-plus
 #choco install steam
+#choco install logitech-options-plus
+#choco install lghub
 
 # install dev tools
 choco install gitkraken
