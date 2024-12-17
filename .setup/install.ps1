@@ -12,6 +12,7 @@ choco install lightshot
 choco install slack
 choco install screentogif
 choco install logitech-options-plus
+choco install lghub
 
 # install dev tools
 choco install gitkraken
