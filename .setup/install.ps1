@@ -32,14 +32,16 @@ mkdir ..\AppData\Roaming\NuGet\
 copy .\resources\NuGet.Config ..\AppData\Roaming\NuGet\
 
 # add pins for apps that auto-update
-choco pin add -n=firefox
-choco pin add -n="microsoft-windows-terminal"
-choco pin add -n=gitkraken
-choco pin add -n=kb2533623
-choco pin add -n=steam
-choco pin add -n=vcredist140
-choco pin add -n=vscode
-choco pin add -n="vscode.install"
+choco pin add -n firefox
+choco pin add -n gitkraken
+choco pin add -n kb2533623
+choco pin add -n lghub
+choco pin add -n logitech-options-plus
+choco pin add -n microsoft-windows-terminal
+choco pin add -n steam
+choco pin add -n vcredist140
+choco pin add -n vscode
+choco pin add -n vscode.install
 
 # generate shims
 & "$env:ChocolateyInstall\tools\shimgen.exe" -p "$env:ChocolateyInstall\tools\shimgen.exe" -o "$env:ChocolateyInstall\bin\shimgen.exe"
