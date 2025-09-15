@@ -42,3 +42,7 @@
 	gpgSign = false
 [tag]
 	forceSignAnnotated = false
+[credential]
+	useHttpPath = true
+[credential "https://dev.azure.com"]
+	useHttpPath = true
