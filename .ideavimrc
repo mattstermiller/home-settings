@@ -30,6 +30,7 @@ nmap <leader>wd <Action>(OpenEditorInOppositeTabGroup)
 " set conflicting key handlers
 sethandler <S-Tab> a:vim
 sethandler <S-CR> a:vim
+sethandler <C-J> a:vim
 sethandler <C-K> a:vim
 
 sethandler <C-Pageup> a:ide
