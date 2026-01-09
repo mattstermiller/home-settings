@@ -17,4 +17,7 @@
 !/AppData/Roaming/Arsclip
 /AppData/Roaming/Arsclip/*
 !/AppData/Roaming/Arsclip/exepaste.ini
+!/AppData/Roaming/Koffee
+/AppData/Roaming/Koffee/*
+!/AppData/Roaming/Koffee/config.json
 

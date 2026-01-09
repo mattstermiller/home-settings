@@ -1,0 +1,379 @@
+{
+  "StartPath": "RestorePrevious",
+  "DefaultPath": "D:\\",
+  "PathFormat": "Windows",
+  "ShowHidden": false,
+  "ShowNextUndoRedo": true,
+  "ShowFullPathInTitle": false,
+  "RefreshOnActivate": true,
+  "SearchExclusions": [
+    ".git",
+    ".svn",
+    ".hg",
+    "CVS",
+    ".DS_Store",
+    ".fake",
+    "bin",
+    "obj",
+    "packages",
+    "node_modules"
+  ],
+  "Tools": [
+    {
+      "ToolName": "Diff with VS Code",
+      "Exe": "code",
+      "Arguments": "--diff {selected_files}",
+      "HideWindow": true
+    },
+    {
+      "ToolName": "Terminal",
+      "Exe": "powershell",
+      "Arguments": "",
+      "HideWindow": false
+    },
+    {
+      "ToolName": "VS Code",
+      "Exe": "code",
+      "Arguments": "{git_root?location} [{selected_files}]",
+      "HideWindow": true
+    },
+    {
+      "ToolName": "Vim",
+      "Exe": "C:\\tools\\vim\\vim91\\gvim.exe",
+      "Arguments": "{selected_files}",
+      "HideWindow": false
+    }
+  ],
+  "KeyBindings": [
+    {
+      "KeyCombo": "Control+Shift+D",
+      "Command": "ItemAction ExecuteTool \"Diff with VS Code\""
+    },
+    {
+      "KeyCombo": "Control+T",
+      "Command": "ItemAction ExecuteTool \"Terminal\""
+    },
+    {
+      "KeyCombo": "Control+E",
+      "Command": "ItemAction ExecuteTool \"Vim\""
+    },
+    {
+      "KeyCombo": "Control+Shift+S",
+      "Command": "ItemAction ExecuteTool \"VS Code\""
+    },
+    {
+      "KeyCombo": "K",
+      "Command": "Cursor CursorUp"
+    },
+    {
+      "KeyCombo": "J",
+      "Command": "Cursor CursorDown"
+    },
+    {
+      "KeyCombo": "Control+K",
+      "Command": "Cursor CursorUpHalfPage"
+    },
+    {
+      "KeyCombo": "Control+U",
+      "Command": "Cursor CursorUpHalfPage"
+    },
+    {
+      "KeyCombo": "Control+J",
+      "Command": "Cursor CursorDownHalfPage"
+    },
+    {
+      "KeyCombo": "Control+D",
+      "Command": "Cursor CursorDownHalfPage"
+    },
+    {
+      "KeyCombo": "G G",
+      "Command": "Cursor CursorToFirst"
+    },
+    {
+      "KeyCombo": "Shift+G",
+      "Command": "Cursor CursorToLast"
+    },
+    {
+      "KeyCombo": "Space",
+      "Command": "Cursor SelectToggle"
+    },
+    {
+      "KeyCombo": "Shift+Space",
+      "Command": "Cursor SelectRange"
+    },
+    {
+      "KeyCombo": "Control+A",
+      "Command": "Cursor SelectAll"
+    },
+    {
+      "KeyCombo": "Z T",
+      "Command": "Cursor Scroll CursorTop"
+    },
+    {
+      "KeyCombo": "Z Z",
+      "Command": "Cursor Scroll CursorMiddle"
+    },
+    {
+      "KeyCombo": "Z B",
+      "Command": "Cursor Scroll CursorBottom"
+    },
+    {
+      "KeyCombo": "F",
+      "Command": "Cursor StartFind false"
+    },
+    {
+      "KeyCombo": "Shift+F",
+      "Command": "Cursor StartFind true"
+    },
+    {
+      "KeyCombo": "Oem1",
+      "Command": "Cursor FindNext"
+    },
+    {
+      "KeyCombo": "L",
+      "Command": "Navigation OpenCursorItem"
+    },
+    {
+      "KeyCombo": "Return",
+      "Command": "Navigation OpenSelected"
+    },
+    {
+      "KeyCombo": "Shift+Return",
+      "Command": "Navigation OpenFileWith"
+    },
+    {
+      "KeyCombo": "Control+Return",
+      "Command": "Navigation OpenFileAndExit"
+    },
+    {
+      "KeyCombo": "Alt+Return",
+      "Command": "Navigation OpenProperties"
+    },
+    {
+      "KeyCombo": "Control+Shift+E",
+      "Command": "Navigation OpenExplorer"
+    },
+    {
+      "KeyCombo": "H",
+      "Command": "Navigation OpenParent"
+    },
+    {
+      "KeyCombo": "G R",
+      "Command": "Navigation OpenRoot"
+    },
+    {
+      "KeyCombo": "G D",
+      "Command": "Navigation OpenDefault"
+    },
+    {
+      "KeyCombo": "G K",
+      "Command": "Navigation OpenKoffeeData"
+    },
+    {
+      "KeyCombo": "Shift+H",
+      "Command": "Navigation Back"
+    },
+    {
+      "KeyCombo": "Shift+L",
+      "Command": "Navigation Forward"
+    },
+    {
+      "KeyCombo": "R",
+      "Command": "Navigation Refresh"
+    },
+    {
+      "KeyCombo": "F5",
+      "Command": "Navigation Refresh"
+    },
+    {
+      "KeyCombo": "OemQuestion",
+      "Command": "Navigation StartSearch"
+    },
+    {
+      "KeyCombo": "N",
+      "Command": "Navigation RepeatPreviousSearch"
+    },
+    {
+      "KeyCombo": "OemQuotes",
+      "Command": "Navigation PromptGoToMark Bookmark"
+    },
+    {
+      "KeyCombo": "Oem3",
+      "Command": "Navigation PromptGoToMark SavedSearch"
+    },
+    {
+      "KeyCombo": "M",
+      "Command": "Navigation PromptSetMark"
+    },
+    {
+      "KeyCombo": "S N",
+      "Command": "Navigation SortList Name"
+    },
+    {
+      "KeyCombo": "S M",
+      "Command": "Navigation SortList Modified"
+    },
+    {
+      "KeyCombo": "S S",
+      "Command": "Navigation SortList Size"
+    },
+    {
+      "KeyCombo": "F9",
+      "Command": "Navigation ToggleHidden"
+    },
+    {
+      "KeyCombo": "G H",
+      "Command": "Navigation ShowNavHistory"
+    },
+    {
+      "KeyCombo": "G U",
+      "Command": "Navigation ShowUndoHistory"
+    },
+    {
+      "KeyCombo": "G S",
+      "Command": "Navigation ShowStatusHistory"
+    },
+    {
+      "KeyCombo": "O",
+      "Command": "ItemAction CreateFile"
+    },
+    {
+      "KeyCombo": "Shift+O",
+      "Command": "ItemAction CreateFolder"
+    },
+    {
+      "KeyCombo": "I",
+      "Command": "ItemAction StartRename Begin"
+    },
+    {
+      "KeyCombo": "A",
+      "Command": "ItemAction StartRename EndName"
+    },
+    {
+      "KeyCombo": "Shift+A",
+      "Command": "ItemAction StartRename End"
+    },
+    {
+      "KeyCombo": "C",
+      "Command": "ItemAction StartRename ReplaceName"
+    },
+    {
+      "KeyCombo": "Shift+C",
+      "Command": "ItemAction StartRename ReplaceAll"
+    },
+    {
+      "KeyCombo": "D",
+      "Command": "ItemAction Yank Move"
+    },
+    {
+      "KeyCombo": "Y",
+      "Command": "ItemAction Yank Copy"
+    },
+    {
+      "KeyCombo": "Shift+Y",
+      "Command": "ItemAction Yank Shortcut"
+    },
+    {
+      "KeyCombo": "Alt+Y",
+      "Command": "ItemAction ClearYank"
+    },
+    {
+      "KeyCombo": "P",
+      "Command": "ItemAction Put"
+    },
+    {
+      "KeyCombo": "Delete",
+      "Command": "ItemAction Trash"
+    },
+    {
+      "KeyCombo": "Shift+Delete",
+      "Command": "ItemAction ConfirmDelete"
+    },
+    {
+      "KeyCombo": "Control+X",
+      "Command": "ItemAction ClipboardCut"
+    },
+    {
+      "KeyCombo": "Control+C",
+      "Command": "ItemAction ClipboardCopy"
+    },
+    {
+      "KeyCombo": "Control+Shift+C",
+      "Command": "ItemAction ClipboardCopyPaths"
+    },
+    {
+      "KeyCombo": "Control+V",
+      "Command": "ItemAction ClipboardPaste"
+    },
+    {
+      "KeyCombo": "U",
+      "Command": "ItemAction Undo"
+    },
+    {
+      "KeyCombo": "Control+Z",
+      "Command": "ItemAction Undo"
+    },
+    {
+      "KeyCombo": "Shift+U",
+      "Command": "ItemAction Redo"
+    },
+    {
+      "KeyCombo": "Control+Shift+Z",
+      "Command": "ItemAction Redo"
+    },
+    {
+      "KeyCombo": "Control+N",
+      "Command": "Window OpenSplitScreenWindow"
+    },
+    {
+      "KeyCombo": "Shift+OemQuestion",
+      "Command": "Window OpenSettings"
+    },
+    {
+      "KeyCombo": "F1",
+      "Command": "Window OpenSettings"
+    },
+    {
+      "KeyCombo": "Control+W",
+      "Command": "Window Exit"
+    }
+  ],
+  "Bookmarks": [
+    {
+      "Item1": "'",
+      "Item2": "C:\\Users\\matt"
+    },
+    {
+      "Item1": "d",
+      "Item2": "C:\\Users\\matt\\Downloads"
+    },
+    {
+      "Item1": "D",
+      "Item2": "C:\\Users\\matt\\OneDrive\\Desktop"
+    },
+    {
+      "Item1": "m",
+      "Item2": "D:\\music"
+    },
+    {
+      "Item1": "M",
+      "Item2": "D:\\music_old\\legacy"
+    },
+    {
+      "Item1": "p",
+      "Item2": "C:\\projects"
+    },
+    {
+      "Item1": "s",
+      "Item2": "C:\\Users\\matt\\AppData\\Roaming\\.minecraft\\Server"
+    }
+  ],
+  "SavedSearches": [],
+  "Limits": {
+    "Back": 100,
+    "Undo": 50,
+    "PathHistory": 2000,
+    "SearchHistory": 100,
+    "StatusHistory": 20
+  }
+}
