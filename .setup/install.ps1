@@ -2,7 +2,7 @@
 choco install firefox
 choco install vim
 choco install microsoft-windows-terminal
-choco install arsclip
+choco install ditto
 choco install autohotkey
 choco install nircmd
 choco install vlc
@@ -51,7 +51,6 @@ shimgen -p "C:\Program Files\Git\git-bash.exe" -o "$env:ChocolateyInstall\bin\gi
 & "$env:userprofile\.ahk\hotkeys.ahk"
 nircmd shortcut "$env:userprofile\.ahk\hotkeys.ahk" '~$folder.startup$' "Hotkeys"
 $startMenu = "$env:userprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
-copy "$startMenu\ArsClip.lnk" "$startMenu\Startup"
 
 REGEDIT /S .\resources\disable-caps-lock_map-scroll-lock-to-caps-lock.reg
 REGEDIT /S .\resources\disable-web-search-in-start-menu-and-explorer.reg
