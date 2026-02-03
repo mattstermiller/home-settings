@@ -1,6 +1,6 @@
 {
   "StartPath": "RestorePrevious",
-  "DefaultPath": "D:\\",
+  "DefaultPath": "C:\\Users\\M.Miller\\projects\\BSC",
   "PathFormat": "Windows",
   "ShowHidden": false,
   "ShowNextUndoRedo": true,
@@ -20,9 +20,21 @@
   ],
   "Tools": [
     {
+      "ToolName": "Cursor",
+      "Exe": "cursor",
+      "Arguments": "{location}",
+      "HideWindow": true
+    },
+    {
       "ToolName": "Diff with VS Code",
       "Exe": "code",
       "Arguments": "--diff {selected_files}",
+      "HideWindow": true
+    },
+    {
+      "ToolName": "Open in DevOps",
+      "Exe": "powershell",
+      "Arguments": "C:\\Users\\M.Miller\\scripts\\open-in-devops.ps1 {git_root} {cursor_item}",
       "HideWindow": true
     },
     {
@@ -34,7 +46,7 @@
     {
       "ToolName": "VS Code",
       "Exe": "code",
-      "Arguments": "{git_root?location} [{selected_files}]",
+      "Arguments": "{location} [{selected_files}]",
       "HideWindow": true
     },
     {
@@ -46,11 +58,19 @@
   ],
   "KeyBindings": [
     {
+      "KeyCombo": "Control+Shift+U",
+      "Command": "ItemAction ExecuteTool \"Cursor\""
+    },
+    {
       "KeyCombo": "Control+Shift+D",
       "Command": "ItemAction ExecuteTool \"Diff with VS Code\""
     },
     {
-      "KeyCombo": "Control+T",
+      "KeyCombo": "Control+Shift+O",
+      "Command": "ItemAction ExecuteTool \"Open in DevOps\""
+    },
+    {
+      "KeyCombo": "Control+Shift+T",
       "Command": "ItemAction ExecuteTool \"Terminal\""
     },
     {
@@ -345,31 +365,27 @@
   "Bookmarks": [
     {
       "Item1": "'",
-      "Item2": "C:\\Users\\matt"
+      "Item2": "C:\\Users\\M.Miller"
     },
     {
       "Item1": "d",
-      "Item2": "C:\\Users\\matt\\Downloads"
+      "Item2": "C:\\Users\\M.Miller\\Downloads"
     },
     {
       "Item1": "D",
-      "Item2": "C:\\Users\\matt\\OneDrive\\Desktop"
+      "Item2": "C:\\Users\\M.Miller\\OneDrive - Brightstar Franchising LLC\\Desktop"
     },
     {
-      "Item1": "m",
-      "Item2": "D:\\music"
+      "Item1": "n",
+      "Item2": "C:\\Users\\M.Miller\\AppData\\Roaming\\NuGet"
     },
     {
-      "Item1": "M",
-      "Item2": "D:\\music_old\\legacy"
+      "Item1": "o",
+      "Item2": "C:\\Users\\M.Miller\\OneDrive - Brightstar Franchising LLC"
     },
     {
       "Item1": "p",
-      "Item2": "C:\\projects"
-    },
-    {
-      "Item1": "s",
-      "Item2": "C:\\Users\\matt\\AppData\\Roaming\\.minecraft\\Server"
+      "Item2": "C:\\Users\\M.Miller\\projects\\BSC"
     }
   ],
   "SavedSearches": [],
