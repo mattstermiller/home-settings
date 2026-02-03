@@ -219,7 +219,7 @@
     },
     {
       "KeyCombo": "F9",
-      "Command": "Navigation ToggleHidden"
+      "Command": "Navigation ToggleShowHidden"
     },
     {
       "KeyCombo": "G H",
@@ -304,6 +304,10 @@
     {
       "KeyCombo": "Control+V",
       "Command": "ItemAction ClipboardPaste"
+    },
+    {
+      "KeyCombo": "Alt+H",
+      "Command": "ItemAction ToggleHiddenAttribute"
     },
     {
       "KeyCombo": "U",

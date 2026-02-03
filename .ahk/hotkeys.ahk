@@ -3,6 +3,7 @@
 SendMode Input
 
 EnvGet, HomeDir, USERPROFILE
+EnvGet, LocalAppData, LocalAppData
 SetWorkingDir %HomeDir%
 
 RunApp(command, asAdmin := false, activateProg := "") {
@@ -32,12 +33,14 @@ if FileExist(ComputerScript) {
     Run "autohotkey.exe" %ComputerScript%
 }
 
+KoffeePath = "%LocalAppData%\Programs\Koffee\koffee.exe"
+
 ; shortcuts
 #c::RunOrActivate("wt.exe", "WindowsTerminal.exe")
 #^c::RunApp("wt.exe", true, "WindowsTerminal.exe")
 #v::RunApp("C:\tools\vim\vim91\gvim.exe")
-#k::RunApp("C:\Program Files (x86)\Koffee\koffee.exe")
-#^k::RunApp("C:\Program Files (x86)\Koffee\koffee.exe", true)
+#k::RunApp(KoffeePath)
+#^k::RunApp(KoffeePath, true)
 #!k::WinActivate, ahk_exe Koffee.exe
 #q::Run, "nircmd.exe" setdefaultsounddevice "Headphones" 1
 #w::Run, "nircmd.exe" setdefaultsounddevice "Speakers" 1
