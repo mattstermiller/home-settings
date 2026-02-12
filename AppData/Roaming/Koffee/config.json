@@ -26,6 +26,12 @@
       "HideWindow": true
     },
     {
+      "ToolName": "Execute Powershell",
+      "Exe": "powershell",
+      "Arguments": "{cursor_file}",
+      "HideWindow": true
+    },
+    {
       "ToolName": "Terminal",
       "Exe": "powershell",
       "Arguments": "",
@@ -50,16 +56,20 @@
       "Command": "ItemAction ExecuteTool \"Diff with VS Code\""
     },
     {
+      "KeyCombo": "Control+P",
+      "Command": "ItemAction ExecuteTool \"Execute Powershell\""
+    },
+    {
       "KeyCombo": "Control+T",
       "Command": "ItemAction ExecuteTool \"Terminal\""
     },
     {
-      "KeyCombo": "Control+E",
-      "Command": "ItemAction ExecuteTool \"Vim\""
-    },
-    {
       "KeyCombo": "Control+Shift+S",
       "Command": "ItemAction ExecuteTool \"VS Code\""
+    },
+    {
+      "KeyCombo": "Control+E",
+      "Command": "ItemAction ExecuteTool \"Vim\""
     },
     {
       "KeyCombo": "K",
