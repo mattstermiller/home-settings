@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Ditto]
+"CheckForMaxEntries"=dword:00000001
+"SimpleTextSearch"=dword:00000001
+"CheckForExpiredEntries"=dword:00000000
+"MaxEntries"=dword:000003e8
+"ExpiredEntries"=dword:00000005
+"ShowQuickPastePosition"=dword:00000001
+"DisplayFont6"=hex:f1,ff,ff,ff,00,00,00,00,00,00,00,00,00,00,00,00,90,01,00,00,\
+  00,00,00,00,03,02,01,31,43,00,6f,00,6e,00,73,00,6f,00,6c,00,61,00,73,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+"SendPasteOnFirstTenHotKeys"=dword:00000001
+"MoveClipsOnGlobal10"=dword:00000001
+"DittoHotKey"=dword:00000356
+"LinesPerRow"=dword:00000002
+"ShowStartupMessage"=dword:00000000
+"EditWordWrap"=dword:00000001
+"UpdateDescWhenSaving"=dword:00000001
+"FirstTenHotKeysFontSize"=dword:0000000b
+
+[HKEY_CURRENT_USER\Software\Ditto\PasteStrings]
+"gvim.exe"="^v"

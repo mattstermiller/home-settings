@@ -50,9 +50,10 @@ shimgen -p "C:\Program Files\Git\git-bash.exe" -o "$env:ChocolateyInstall\bin\gi
 # system settings
 & "$env:userprofile\.ahk\hotkeys.ahk"
 nircmd shortcut "$env:userprofile\.ahk\hotkeys.ahk" '~$folder.startup$' "Hotkeys"
-$startMenu = "$env:userprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
 
-REGEDIT /S .\resources\disable-caps-lock_map-scroll-lock-to-caps-lock.reg
-REGEDIT /S .\resources\disable-web-search-in-start-menu-and-explorer.reg
-REGEDIT /S .\resources\disable-login-blur.reg
+regedit /S .\resources\disable-caps-lock_map-scroll-lock-to-caps-lock.reg
+regedit /S .\resources\disable-web-search-in-start-menu-and-explorer.reg
+regedit /S .\resources\disable-login-blur.reg
+regedit /S .\resources\ditto.reg
+# regedit /S .\resources\enable-hibernate.reg
 
