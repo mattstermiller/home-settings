@@ -20,6 +20,12 @@
   ],
   "Tools": [
     {
+      "ToolName": "Compute SRI Hash",
+      "Exe": "powershell",
+      "Arguments": "C:\\Users\\M.Miller\\scripts\\ComputeSRIHash.ps1 {cursor_file}",
+      "HideWindow": false
+    },
+    {
       "ToolName": "Cursor",
       "Exe": "cursor",
       "Arguments": "{location}",
@@ -45,7 +51,7 @@
     },
     {
       "ToolName": "Terminal",
-      "Exe": "powershell",
+      "Exe": "wt",
       "Arguments": "",
       "HideWindow": false
     },
@@ -63,6 +69,10 @@
     }
   ],
   "KeyBindings": [
+    {
+      "KeyCombo": "Control+Shift+H",
+      "Command": "ItemAction ExecuteTool \"Compute SRI Hash\""
+    },
     {
       "KeyCombo": "Control+Shift+U",
       "Command": "ItemAction ExecuteTool \"Cursor\""
