@@ -57,7 +57,7 @@
     },
     {
       "ToolName": "Vim",
-      "Exe": "C:\\tools\\vim\\vim91\\gvim.exe",
+      "Exe": "C:\\tools\\vim\\vim92\\gvim.exe",
       "Arguments": "{selected_files}",
       "HideWindow": false
     }
