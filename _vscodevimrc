@@ -17,5 +17,4 @@ nmap <leader>wh workbench.action.focusPreviousGroup
 nmap <leader>wl workbench.action.focusNextGroup
 nmap <leader>wH workbench.action.moveEditorToPreviousGroup
 nmap <leader>wL workbench.action.moveEditorToNextGroup
-nmap <leader>ws workbench.action.moveEditorToNextGroup
-nmap <leader>wd workbench.action.splitEditor
+nmap <leader>ws workbench.action.splitEditor
