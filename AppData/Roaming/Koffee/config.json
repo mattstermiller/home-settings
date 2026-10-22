@@ -22,7 +22,7 @@
     {
       "ToolName": "Compute SRI Hash",
       "Exe": "powershell",
-      "Arguments": "C:\\Users\\M.Miller\\scripts\\ComputeSRIHash.ps1 {cursor_file}",
+      "Arguments": "-NoProfile -File C:\\Users\\M.Miller\\scripts\\ComputeSRIHash.ps1 {cursor_file}",
       "HideWindow": false
     },
     {
@@ -46,7 +46,7 @@
     {
       "ToolName": "Open in DevOps",
       "Exe": "powershell",
-      "Arguments": "C:\\Users\\M.Miller\\scripts\\open-in-devops.ps1 {git_root} {cursor_item}",
+      "Arguments": "-NoProfile -File C:\\Users\\M.Miller\\scripts\\open-in-devops.ps1 {git_root} {cursor_item}",
       "HideWindow": true
     },
     {
